@@ -8,7 +8,8 @@ import numpy as np
 cap = cv2.VideoCapture("")
 
 # Trained XML classifiers describes some features of some object we want to detect
-car_cascade = cv2.CascadeClassifier("C:\\Users\\peter\\PycharmProjects\\Object Tracking\\Real-Time_Vehicle_Detection-as-Simple-master\\cars_1.xml")
+# Download and locate cars_1.xml on your machine
+car_cascade = cv2.CascadeClassifier("cars_1.xml")
 
 # Initialize the HOG descriptor/person detector
 hog = cv2.HOGDescriptor()
